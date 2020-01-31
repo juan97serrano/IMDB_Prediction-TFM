@@ -22,11 +22,11 @@ for num, film in enumerate(ids_film):
     driver.get(url)
 
     # Busca los elementos que tienen en el contenido un determinado texto, budget y cumulative...
-    # description = driver.find_element_by_class_name('title_wrapper')
-    img = driver.find_element_by_class_name('poster').find_element_by_class_name()
-    src = img.get_attribute('src')
+    description = driver.find_element_by_class_name('title_wrapper')
+    #img = driver.find_element_by_class_name('poster').find_element_by_class_name()
+    #src = img.get_attribute('src')
     tag_name = "film"
-    os.system("wget %s --no-check-certificate -O %s.png" % (src, tag_name))
-    print(img.text)
+    #os.system("wget %s --no-check-certificate -O %s.png" % (src, tag_name))
+    #print(img.text)
 
 driver.close()

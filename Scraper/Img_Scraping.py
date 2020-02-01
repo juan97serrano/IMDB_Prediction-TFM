@@ -6,21 +6,17 @@ import os
 df = pd.read_csv("../data/title.basics.tsv", sep="\t",nrows=1000)
 df_filter = df[df['titleType'] == 'movie']
 df_filter_reset_index = df_filter.reset_index()
-
 ids_film = df_filter_reset_index['tconst'].tolist()
 
 driver = webdriver.Chrome(executable_path='local/chromedriver')
-correct_films = 0
-
-# test_list = ['tt7286456',ids_film[538827],'tt0187393']
 
 for num, film in enumerate(ids_film):
+    # TODO: - guardar en un dataframe
+    #       - que se guarde el dataframe cada x iteraciones
     print("Imagen número:", num, ", ID:", film)
-
     url = 'https://www.imdb.com/title/' + film + '/?ref_=fn_al_tt_1'
     driver.get(url)
 
-    # Busca los elementos que tienen en el contenido un determinado texto, budget y cumulative...
     img_len = len(driver.find_elements_by_class_name('poster'))
     if img_len == 1:
         img = driver.find_element_by_class_name('poster')      

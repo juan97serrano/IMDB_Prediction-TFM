@@ -18,15 +18,14 @@ for num, film in enumerate(ids_film):
     print("Imagen número:", num, ", ID:", film)
 
     url = 'https://www.imdb.com/title/' + film + '/?ref_=fn_al_tt_1'
-    # url = 'https://pro.imdb.com/title/'+film
     driver.get(url)
 
     # Busca los elementos que tienen en el contenido un determinado texto, budget y cumulative...
-    description = driver.find_element_by_class_name('title_wrapper')
-    #img = driver.find_element_by_class_name('poster').find_element_by_class_name()
-    #src = img.get_attribute('src')
-    tag_name = "film"
-    #os.system("wget %s --no-check-certificate -O %s.png" % (src, tag_name))
-    #print(img.text)
+    img_len = len(driver.find_elements_by_class_name('poster'))
+    if img_len == 1:
+        img = driver.find_element_by_class_name('poster')      
+        src=img.find_element_by_xpath("./a/img").get_attribute("src")
+        os.system("wget %s --no-check-certificate -O %s.png" % (src, "../data/img/"+film))
+   
 
 driver.close()

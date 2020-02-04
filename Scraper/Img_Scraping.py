@@ -1,6 +1,7 @@
 from pandas import DataFrame
 from selenium import webdriver
 import pandas as pd
+import numpy as np
 import os
 import csv
 
@@ -27,11 +28,9 @@ def header():
     return csv_row
 
 
-df = pd.read_csv("../data/title.basics.tsv", sep="\t",nrows=1000)
-#df_filter = df[df["titleType"] == "movie"]
-df_filter_reset_index = df.reset_index()
-ids_film = df_filter_reset_index["tconst"].tolist()
-
+numpy_lista = np.load("../data/lista_final_ids.npy",allow_pickle=True)
+ids_film = list(numpy_lista)
+print(ids_film)
 driver = webdriver.Chrome(executable_path="local/chromedriver")
 
 iter_for_saving = 5

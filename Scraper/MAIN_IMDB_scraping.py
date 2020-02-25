@@ -174,6 +174,6 @@ for film in id_films:
         time.sleep(1)
         browser = webdriver.Firefox()
         
-   id_films = np.load('lista_final_ids.npy',allow_pickle=True).tolist()
+   id_films = np.load('../data/lista_final_ids.npy',allow_pickle=True).tolist()
    id_films.index("tt9916754")
    id_films[542067:]

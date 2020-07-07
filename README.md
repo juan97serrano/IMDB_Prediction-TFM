@@ -1,3 +1,3 @@
-Proyecto de Fin de Máster realizado por: Juan Serrano Vara y Rodrigo Díaz Morón
+Proyecto de Fin de Máster realizado por: Rodrigo Díaz Morón y Juan Serrano Vara
 
-Version de Tensorflow utilizada: 2.2.0
+Versión de Tensorflow utilizada: 2.2.0

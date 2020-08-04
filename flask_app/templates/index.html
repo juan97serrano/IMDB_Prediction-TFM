@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="UTF-8">
+        <title>Aplicacion</title>
+    </head>
+
+    <body>
+        <div class="col-md-12"><br></div>
+        <div class="col-md-12"><br></div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" align="center">
+                <div><h1>Flask application that runs a neural network model stored on google cloud platform</h1></div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+
+        <div class="col-md-12"><br></div>
+        <div class="col-md-12"><br></div>
+        <div class="row">
+            
+            <div class="col-md-1"></div>
+            <div class="col-md-3" align="center">
+
+              <h4>Caratula de la pelicula</h4>
+              <br><input type='file' accept='image/*' onchange='openFile(event)'><br>
+              <br>
+              <img id='output' style="height:268px; width:182px;">
+              
+            </div>
+
+            
+
+            <div class="col-md-4" align="center">
+              <h4>Variables Categoricas</h4>
+              <label for="f1">Feature 1:</label><br>
+              <input type="text" id="f1" name="f1"><br>
+
+              <label for="f2">Feature 2:</label><br>
+              <input type="text" id="f2" name="f2"><br>
+
+              <label for="f3">Feature 3:</label><br>
+              <input type="text" id="f3" name="f3"><br>
+
+              <label for="f4">Feature 4:</label><br>
+              <input type="text" id="f4" name="f4"><br>
+
+              <label for="f5">Feature 5:</label><br>
+              <input type="text" id="f5" name="f5"><br>
+
+              <label for="f6">Feature 6:</label><br>
+              <input type="text" id="f6" name="f6"><br>
+
+              <label for="f7">Feature 7:</label><br>
+              <input type="text" id="f7" name="f7"><br>
+
+              <label for="f8">Feature 8:</label><br>
+              <input type="text" id="f8" name="f8"><br>
+            </div>
+
+
+            <div class="col-md-3" align="center">
+
+                <h4>Titulo y Descripcion</h4>
+                <label for="titulo">Titulo:</label><br>
+                <input type="text" id="titulo" name="titutlo"><br>
+                <label for="Descripcion">Descripcion:</label><br>
+                <input type="text" id="Descripcion" name="Descripcion"><br>
+    
+            </div>
+            <div class="col-md-1"></div>
+
+        </div>
+        <div class="col-md-12"><br></div>
+
+
+        
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" align="center">
+
+
+            
+
+                <h4>Seleccione los datos que desea para clasificar</h4>
+                <select class="custom-select custom-select-lg mb-3" id="opcion" onchange="danio(this.value)">
+                    <option value="" selected disabled hidden>Choose here</option>
+                    <option value="1">Option 1: Img</option>
+                    <option value="2">Option 2: Categorical Data</option>
+                    <option value="3">Option 3: Img + Categorical Data</option>
+                    <option value="4">Option 4: Título</option>                   
+                    <option value="5">Option 5: Descripción</option>
+                    <option value="6">Option 6: Titulo + Descripción</option>
+                </select>
+    
+           
+                <button id="predict" class="btn btn-success">Predict</button>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="col-md-12"><br></div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" align="center">
+                <div>The output of the network is</div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" align="center">
+                <textarea id='inputArea'></textarea>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src ="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+
+            // Para seleccionar la opcion 
+            var typeaux;
+            function danio(type){
+                console.log(type);
+                window.opcion = type;
+            }       
+
+            // Función para leer la imagen
+            var openFile = function(file) {
+                var input = file.target;
+
+                var reader = new FileReader();
+                reader.onload = function(){
+                    var dataURL = reader.result;
+                    var output = document.getElementById('output');
+
+                    output.src = dataURL;
+                    window.url_img = dataURL.replace("data:image/jpeg;base64,","")
+                };
+                reader.readAsDataURL(input.files[0]);
+                            
+            };
+
+            // Función para enviar los datos a el fichero python
+            $("#predict").click(function(event){
+                
+                var f1 = $("#f1").val();
+                var f2 = $("#f2").val();
+                var f3 = $("#f3").val();
+                var f4 = $("#f4").val();
+                var f5 = $("#f5").val();
+                var f6 = $("#f6").val();
+                var f7 = $("#f7").val();
+                var f8 = $("#f8").val();
+                
+                var data = {datos_categoricos: [f1,f2,f3,f4,f5,f6,f7,f8], url_img: window.url_img, opcion: window.opcion};
+
+                var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+
+                
+                $.ajax({
+	   				type: "POST",
+	   				//url: $SCRIPT_ROOT + "/put_prediction/",
+                    url: "/put_prediction/",	
+                    contentType: "application/json",
+                    data: JSON.stringify(data),
+                    success: function(data){
+	   				    var newText = data;
+	   					$("#inputArea").val(newText);
+	   				}
+	   			});
+            });
+
+
+        </script>
+    </body>
+</html>

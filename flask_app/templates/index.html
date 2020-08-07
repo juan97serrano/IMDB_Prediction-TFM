@@ -11,12 +11,13 @@
     </head>
 
     <body>
+        <div id ="gif"></div>
         <div class="col-md-12"><br></div>
         <div class="col-md-12"><br></div>
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4" align="center">
-                <div><h1>Flask application that runs a neural network model stored on google cloud platform</h1></div>
+                <div><h1>IMDB Prediction App</h1></div>
             </div>
             <div class="col-md-4"></div>
         </div>
@@ -119,12 +120,33 @@
             </div>
             <div class="col-md-4"></div>
         </div>
+        <style>
+            #gif {
+                background: url('https://i.stack.imgur.com/hzk6C.gif') no-repeat center center;
+                position: absolute;
+                top: 30%;
+                left: 0; 
+                height: 100%;
+                width: 100%;
+                z-index: 1;    
+            }
+            </style>
+
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src ="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script>
 
+            $(window).ready(hideLoader);
+            function hideLoader() {
+                $('#gif').hide();
+            }
+
+            function showLoader() {
+                $('#gif').show();
+            }
+            
             // Para seleccionar la opcion 
             var typeaux;
             function danio(type){
@@ -149,7 +171,10 @@
             };
 
             // Función para enviar los datos a el fichero python
+            
             $("#predict").click(function(event){
+
+                $(window).ready(showLoader);
                 
                 var f1 = $("#f1").val();
                 var f2 = $("#f2").val();
@@ -159,8 +184,13 @@
                 var f6 = $("#f6").val();
                 var f7 = $("#f7").val();
                 var f8 = $("#f8").val();
+                var titulo = $("#titulo").val();
+                var Descripcion = $("#Descripcion").val();
+
+                console.log(titulo)
+                console.log(Descripcion)
                 
-                var data = {datos_categoricos: [f1,f2,f3,f4,f5,f6,f7,f8], url_img: window.url_img, opcion: window.opcion};
+                var data = {datos_categoricos: [f1,f2,f3,f4,f5,f6,f7,f8], url_img: window.url_img, opcion: window.opcion, titulo: titulo, Descripcion: Descripcion};
 
                 var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
 
@@ -174,11 +204,16 @@
                     success: function(data){
 	   				    var newText = data;
 	   					$("#inputArea").val(newText);
+                        $(window).ready(hideLoader);
 	   				}
 	   			});
+                
+                
             });
 
 
         </script>
+
+
     </body>
 </html>

@@ -9,7 +9,6 @@ import os
 from PIL import Image
 import io
 
-
 import keras.preprocessing.image as krs_image
 import tensorflow.keras.models as models
 
@@ -35,8 +34,23 @@ def read_and_predict():
         url = valor['url_img']
         img_array = Img_to_array(url)
         pred_rating = predict_img(img_array)
-        #pred_rating = 1
-        return str(pred_rating)
+        return "Esta imagen es de la categoría: " + str(pred_rating)
+    
+    if opcion == 4:
+        # titulo
+        titulo = valor['titulo']
+        pred_rating = predict_title(titulo)
+        return "Este titulo es de la categoría: " + str(pred_rating)
+        
+    if opcion == 5:
+        # descripcion
+        descripcion = valor['Descripcion']
+        return str(descripcion)
+           
+    if opcion == 6:
+        # titulo + descripción
+        return str("ambas")
+        
 
     return "holi"
 
@@ -61,13 +75,23 @@ def predict_img(img_array):
 
     img = np.array([img_array])
 
-    loaded_model = models.load_model("models/Img")
+    loaded_model = models.load_model("models/img")
 
     prediction = loaded_model.predict(img)
 
     result = np.argmax(prediction)
 
     return result
+
+def predict_title(title):
+
+    loaded_model = models.load_model("models/title")
+    prediction = loaded_model.predict([title])
+
+    result = np.argmax(prediction)
+
+    return result
+
 
 
 if __name__ == '__main__':

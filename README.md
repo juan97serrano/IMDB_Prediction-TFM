@@ -10,7 +10,10 @@
 
 4- Aplicación
 
-* Acceder a la app:
+Opción A:
+* Acceder a la app: URL
+
+Opción B:
 
 * Descargar en local: 
 
@@ -27,6 +30,8 @@ bash docker_buildImg.sh
 ```
 docker_buildContainer.sh
 ```
+* En nuestro navegador introducir en el campo de la URL: http://localhost:5000.
+
 
 ![IMDB_APP](https://github.com/juan97serrano/IMDB_Prediction-TFM/blob/master/images_readme/Screenshot%202020-08-30%20at%2012.33.39.png)
 

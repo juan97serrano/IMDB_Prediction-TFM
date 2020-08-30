@@ -8,7 +8,7 @@ Los datos han sido Scrapeados de la Web de IMDB (https://www.imdb.com) a través
 
 ![IMDB_Image](https://github.com/juan97serrano/IMDB_Prediction-TFM/blob/master/images_readme/Screenshot%202020-08-30%20at%2012.50.25.png)
 
-Se descargó para cada película de las 540000 la siguiete información: Imagen promocional, Duración, Título, Descripción, Color, Año de publicación, Director, Número de votos, Géneros, Lenguajes, País, Keywords, Escritores, Actores, Rating.
+Se descargó para cada película de las 540000 la siguiete información: Imagen promocional, Duración, Título, Descripción, Color, Año de publicación, Director, Número de votos, Géneros, Lenguajes, País, Keywords, Escritores, Actores,Content Rating Metascore Rating, Budget CWG (Cumulative Worldwide Gross), Rating.
 
 Esto se ha realizdo con los códigos que se encuentran en la carpeta del repositorio llamada "Scraper·.
 

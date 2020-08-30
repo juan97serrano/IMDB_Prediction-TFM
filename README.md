@@ -10,6 +10,24 @@
 
 4- Aplicación
 
+* Acceder a la app:
+
+* Descargar en local: 
+
+* Instalar Docker.
+
+* Descargar imagen de Docker Hub y la carpeta flask_app del repositorio. Para ello situados dentro de la carpeta ejcutar el siguiente comando. 
+
+```
+bash docker_buildImg.sh
+```
+
+* Ejecutar el fichero .bash “docker_buildContainer.sh”. Dentro del fichero tenemos que cambiar el ID de la imágen por el ID que le ha asignado docker en nuestra máquina. (Ejecutar docker image ls)
+
+```
+docker_buildContainer.sh
+```
+
 ![IMDB_APP](https://github.com/juan97serrano/IMDB_Prediction-TFM/blob/master/images_readme/Screenshot%202020-08-30%20at%2012.33.39.png)
 
 

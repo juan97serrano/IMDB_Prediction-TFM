@@ -1,14 +1,14 @@
 # IMDB Rating Prediction
 ## KSchool:Máster en Inteligencia Artificial y Deep Learning
-### Trabajo de Fin de Máster realizado por: Rodrigo Díaz Morón y Juan Serrano Vara
+## Trabajo de Fin de Máster realizado por: Rodrigo Díaz Morón y Juan Serrano Vara
 
-1- Datos
+### 1- Datos
 
-2- Preprocesamiento
+### 2- Preprocesamiento
 
-3- Clasificadores
+### 3- Clasificadores
 
-4- Aplicación
+### 4- Aplicación
 
 Opción A:
 * Acceder a la app: URL

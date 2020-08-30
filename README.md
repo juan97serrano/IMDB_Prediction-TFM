@@ -13,6 +13,6 @@
 ![IMDB_APP](https://github.com/juan97serrano/IMDB_Prediction-TFM/blob/master/images_readme/Screenshot%202020-08-30%20at%2012.33.39.png)
 
 
-Nota: Todos los notebooks están preparados para ser ejecutados con Google Colaborative Notebooks
+Nota: Todos los códigos a excepción de los que son de la aplicación web están preparados para ser ejecutados con Google Colaborative Notebooks
 
 

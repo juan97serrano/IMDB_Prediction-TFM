@@ -6,7 +6,7 @@
 
 Los datos han sido Scrapeados de la Web de IMDB (https://www.imdb.com) a través de la librería Selenium.
 
-
+![IMDB_Image](https://github.com/juan97serrano/IMDB_Prediction-TFM/blob/master/images_readme/Screenshot%202020-08-30%20at%2012.50.25.png)
 
 ### 2- Preprocesamiento
 

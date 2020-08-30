@@ -4,6 +4,10 @@
 
 ### 1- Datos
 
+Los datos han sido Scrapeados de la Web de IMDB (https://www.imdb.com) a través de la librería Selenium.
+
+
+
 ### 2- Preprocesamiento
 
 ### 3- Clasificadores

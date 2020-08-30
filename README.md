@@ -10,9 +10,11 @@ Los datos han sido Scrapeados de la Web de IMDB (https://www.imdb.com) a través
 
 Se descargó para cada película de las 540000 la siguiete información: Imagen promocional, Duración, Título, Descripción, Color, Año de publicación, Director, Número de votos, Géneros, Lenguajes, País, Keywords, Escritores, Actores, Rating.
 
-Esto se ha realizdo con los códigos que se encuentran en la carpeta del repositorio llamada Scraper.
+Esto se ha realizdo con los códigos que se encuentran en la carpeta del repositorio llamada "Scraper·.
 
 ### 2- Preprocesamiento
+
+Las técnicas de preprocesamiento implementadas se encuentran explicadas en el Punto 2 en el informe del TFM. Todas las técnicas realizadas se encuentran en  los ficheros de la carpeta llamada "Preprocesamiento". Ahí encontraremos una seríe de ficheros numerados del 0-6 que indican el orden en el que se han ido realizado los cambios en el dataset original hasta obtener el fichero final llamado "imdb_data.csv".
 
 ### 3- Clasificadores
 

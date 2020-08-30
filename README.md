@@ -13,10 +13,8 @@
 Opción A:
 * Acceder a la app: URL
 
-Opción B:
-
-* Descargar en local: 
-
+Opción B (Descargar en local):
+ 
 * Instalar Docker.
 
 * Descargar imagen de Docker Hub y la carpeta flask_app del repositorio. Para ello situados dentro de la carpeta ejcutar el siguiente comando. 

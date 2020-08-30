@@ -41,6 +41,22 @@ docker_buildContainer.sh
 
 ![IMDB_APP](https://github.com/juan97serrano/IMDB_Prediction-TFM/blob/master/images_readme/Screenshot%202020-08-30%20at%2012.33.39.png)
 
+### 4- Resultados
+
+
+#### Métricas para conjunto de test.
+
+| Algoritmo | Recall Clase 0 | F1 Score Clase 1 | Precision Clase 2 | Accuracy | Custom Metric |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Tabular Classificator | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  |
+| IMG Classificator | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  |
+| IMG+Tab Classificator | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  |
+| Description Classificator | 50  | 55  | 63  | 45  | 56  |
+| Title Classificator | 31  | 49  | 45  | 42  | 42  |
+
+
+
+
 
 Nota: Todos los códigos a excepción de los que son de la aplicación web están preparados para ser ejecutados con Google Colaborative Notebooks
 

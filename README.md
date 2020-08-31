@@ -38,7 +38,7 @@ FICHEROS (en la carpeta Preprocesamiento):
 
 7-Downsampling_Img_to_Array.ipynb: Lee todas la imágenes resultantes de realizar el filtro por votos y convierte cada imagen en un fichero .npy que contiene en array de la imagen con el reescalado a 32*32. El fichero resultante img_numpy.zip contiene todos los arrays de cada imagen.
 
-Los datos resultantes de todos los pasos del preprocesamiento se encuentran en el siguiente directorio (ficehros imdb_data.csv, code_train_dv.csv y code_test_dv.csv, img_numpy.zip) todos los demas archivos generados en los pasos intermedios se encuentran en la carpeta antiguos:
+Los datos resultantes de todos los pasos del preprocesamiento se encuentran en el siguiente directorio (ficheros imdb_data.csv, code_train_dv.csv y code_test_dv.csv, img_numpy.zip) todos los demas archivos generados en los pasos intermedios se encuentran en la carpeta antiguos:
 
 https://drive.google.com/drive/folders/1eqbmKMAjCjl1AWGqrRhgdbuQZzzm8pSU?usp=sharing
 

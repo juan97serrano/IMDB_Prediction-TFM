@@ -10,7 +10,7 @@ Los datos han sido Scrapeados de la Web de IMDB (https://www.imdb.com) a través
 
 Se descargó para cada película de las 540000 la siguiete información: Imagen promocional, Duración, Título, Descripción, Color, Año de publicación, Director, Número de votos, Géneros, Lenguajes, País, Keywords, Escritores, Actores,Content Rating Metascore Rating, Budget CWG (Cumulative Worldwide Gross), Rating.
 
-Esto se ha realizdo con los códigos que se encuentran en la carpeta del repositorio llamada "Scraper·.
+Esto se ha realizdo con los códigos que se encuentran en la carpeta del repositorio llamada "Scrapper".
 
 Los datos ORIGINALES se encuentran en el siguiente directorio en la carpeta Original las imágenes se encuentran comprimidas en un fichero .zip:
 

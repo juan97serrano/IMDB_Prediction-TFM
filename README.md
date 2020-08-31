@@ -71,7 +71,7 @@ EL codigo que se ha utlizado para hacer la clasificacion es: Text/Text Classific
 ### 4- Aplicación
 
 Opción A:
-* Acceder a la app: URL
+* Acceder a la app: http://34.106.165.107:5000
 
 Opción B (Descargar en local):
  

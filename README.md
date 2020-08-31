@@ -101,7 +101,7 @@ docker_buildContainer.sh
 | Algoritmo | Recall Clase 0 | F1 Score Clase 1 | Precision Clase 2 | Accuracy | Custom Metric |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Tabular Classificator | 65  | 62 | 73  | 63  | 66  |
-| IMG Classificator | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  | 45  | 44  |
+| IMG Classificator | 27  | 56  | 48  | 45  | 44  |
 | IMG+Tab Classificator | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  |
 | Description Classificator | 50  | 55  | 63  | 45  | 56  |
 | Title Classificator | 31  | 49  | 45  | 42  | 42  |

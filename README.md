@@ -57,7 +57,7 @@ EL codigo que se ha utlizado para hacer la clasificacion es: ClasificadorMultiIn
 
 **Image classificator**
 
-EL codigo que se ha utlizado para hacer la clasificacion es: PONERLO
+EL codigo que se ha utlizado para hacer la clasificacion es: Img classification/IMG_Clasiffier-ModeloPropio.ipynb
 
 **Title classificator**
 

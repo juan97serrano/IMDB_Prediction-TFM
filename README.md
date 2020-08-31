@@ -12,6 +12,10 @@ Se descargó para cada película de las 540000 la siguiete información: Imagen 
 
 Esto se ha realizdo con los códigos que se encuentran en la carpeta del repositorio llamada "Scraper·.
 
+Los datos ORIGINALES se encuentran en el siguiente directorio en la carpeta Original:
+
+https://drive.google.com/drive/folders/1eqbmKMAjCjl1AWGqrRhgdbuQZzzm8pSU?usp=sharing
+
 ### 2- Preprocesamiento
 
 Las técnicas de preprocesamiento implementadas se encuentran explicadas en el Punto 2 en el informe del TFM. Todas las técnicas realizadas se encuentran en  los ficheros de la carpeta llamada "Preprocesamiento". Ahí encontraremos una seríe de ficheros numerados del 0-7 que indican el orden en el que se han ido realizado los cambios en el dataset original hasta obtener el fichero final llamado "imdb_data.csv".

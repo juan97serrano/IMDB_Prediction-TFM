@@ -12,13 +12,35 @@ Se descargó para cada película de las 540000 la siguiete información: Imagen 
 
 Esto se ha realizdo con los códigos que se encuentran en la carpeta del repositorio llamada "Scraper·.
 
-Los datos ORIGINALES se encuentran en el siguiente directorio en la carpeta Original:
+Los datos ORIGINALES se encuentran en el siguiente directorio en la carpeta Original las imágenes se encuentran comprimidas en un fichero .zip:
 
 https://drive.google.com/drive/folders/1eqbmKMAjCjl1AWGqrRhgdbuQZzzm8pSU?usp=sharing
 
 ### 2- Preprocesamiento
 
 Las técnicas de preprocesamiento implementadas se encuentran explicadas en el Punto 2 en el informe del TFM. Todas las técnicas realizadas se encuentran en  los ficheros de la carpeta llamada "Preprocesamiento". Ahí encontraremos una seríe de ficheros numerados del 0-7 que indican el orden en el que se han ido realizado los cambios en el dataset original hasta obtener el fichero final llamado "imdb_data.csv".
+
+FICHEROS:
+
+0-Data_concat.ipynb: Unimos todos los ficehros resultantes del Scraper.
+
+1-Data_pre_process.ipynb: Seleccionamos solo las películas que tienen la información que nos interesa (quitamos las películas que tienen unknown en una serie de variables). Fichero resultante: FILTERED_FINAL_IMBD_DATA.csv
+
+2-Filtered_per_images.ipynb: Filtra los datos obtenidos por solo los que tienen imagen. Fichero resultante: filtered_df_with_imgNames.csv
+
+3-Tabular_preprocess.ipynb: Reazliamos el preprocesamiento básico indicado en el punto 2 del informe. Fichero resultante imdb_data.csv
+
+4-Tabular_Preprocess_with_actors.ipynb: Nos vemos oblgados a realizar el scraper de solo los actores y el fichero rsultante lo unimos con el generado en el punto 3. Fichero resultante imdb_data.csv
+
+5-get_votes.ipynb: Formateamos de manera correcta la variable votos. Fichero resultante imdb_data.csv
+
+6-Filter_per_votes.ipynb: iltramos las películas por las que tienen mas de 125 votos. Fichero resultante imdb_data.csv
+
+7-Downsampling_Img_to_Array.ipynb: Lee todas la imágenes resultantes de realizar el filtro por votos y convierte cada imagen en un fichero .npy que contiene en array de la imagen con el reescalado a 32*32. El fichero resultante img_numpy.zip contiene todos los arrays de cada imagen.
+
+Los datos resultantes de todos los pasos del preprocesamiento se encuentran en el siguiente directorio (ficehros imdb_data.csv, code_train_dv.csv y code_test_dv.csv, img_numpy.zip) todos los demas archivos generados en los pasos intermedios se encuentran en la carpeta antiguos:
+
+https://drive.google.com/drive/folders/1eqbmKMAjCjl1AWGqrRhgdbuQZzzm8pSU?usp=sharing
 
 ### 3- Clasificadores
 

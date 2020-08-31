@@ -22,7 +22,7 @@ Las técnicas de preprocesamiento implementadas se encuentran explicadas en el P
 
 FICHEROS:
 
-0-Data_concat.ipynb: Unimos todos los ficehros resultantes del Scraper.
+0-Data_concat.ipynb: Unimos todos los ficheros resultantes del Scraper.
 
 1-Data_pre_process.ipynb: Seleccionamos solo las películas que tienen la información que nos interesa (quitamos las películas que tienen unknown en una serie de variables). Fichero resultante: FILTERED_FINAL_IMBD_DATA.csv
 

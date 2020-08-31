@@ -77,7 +77,9 @@ Opción B (Descargar en local):
  
 * Instalar Docker.
 
-* Descargar imagen de Docker Hub y la carpeta flask_app del repositorio. Para ello situados dentro de la carpeta ejcutar el siguiente comando. 
+* Descargar imagen de Docker Hub y la carpeta flask_app del repositorio. Para ello situados dentro de la carpeta ejcutar el siguiente comando.
+
+* Descargar esta carpeta (https://drive.google.com/file/d/1R7FlSWD1lKl91_9lmHRhf_k90ruYoh_k/view?usp=sharing) y ponerla en dentro de la carpeta flask_app.
 
 ```
 bash docker_buildImg.sh
@@ -106,10 +108,6 @@ docker_buildContainer.sh
 | Description Classificator | 50  | 55  | 63  | 45  | 56  |
 | Title Classificator | 31  | 49  | 45  | 42  | 42  |
 
-
-
-
-### 5- Testing de la aplicación
 
 Nota: Todos los códigos a excepción de los que son de la aplicación web están preparados para ser ejecutados con Google Colaborative Notebooks
 

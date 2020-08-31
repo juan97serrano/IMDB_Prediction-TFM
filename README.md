@@ -73,7 +73,7 @@ EL codigo que se ha utlizado para hacer la clasificacion es: Text/Text Classific
 Opción A:
 * Acceder a la app: http://34.106.165.107:5000
 
-Opción B (Descargar en local):
+Opción B (Descarga en local):
  
 * Instalar Docker.
 

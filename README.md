@@ -30,11 +30,11 @@ FICHEROS:
 
 3-Tabular_preprocess.ipynb: Reazliamos el preprocesamiento básico indicado en el punto 2 del informe. Fichero resultante imdb_data.csv
 
-4-Tabular_Preprocess_with_actors.ipynb: Nos vemos oblgados a realizar el scraper de solo los actores y el fichero rsultante lo unimos con el generado en el punto 3. Fichero resultante imdb_data.csv
+4-Tabular_Preprocess_with_actors.ipynb: Nos vemos oblgados a realizar el scraper de solo los actores y el fichero resultante lo unimos con el generado en el punto 3. Fichero resultante imdb_data.csv
 
 5-get_votes.ipynb: Formateamos de manera correcta la variable votos. Fichero resultante imdb_data.csv
 
-6-Filter_per_votes.ipynb: iltramos las películas por las que tienen mas de 125 votos. Fichero resultante imdb_data.csv
+6-Filter_per_votes.ipynb: Filtramos las películas por las que tienen mas de 125 votos. Fichero resultante imdb_data.csv
 
 7-Downsampling_Img_to_Array.ipynb: Lee todas la imágenes resultantes de realizar el filtro por votos y convierte cada imagen en un fichero .npy que contiene en array de la imagen con el reescalado a 32*32. El fichero resultante img_numpy.zip contiene todos los arrays de cada imagen.
 

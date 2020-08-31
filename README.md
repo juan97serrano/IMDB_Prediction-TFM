@@ -44,6 +44,12 @@ https://drive.google.com/drive/folders/1eqbmKMAjCjl1AWGqrRhgdbuQZzzm8pSU?usp=sha
 
 ### 3- Clasificadores
 
+**Machine Learning classifcator**
+
+Los codigos que se han utilizado de Machine Learning para la realización de los baselines se encuentran en la carpeta Tabular_Classification/Pruebas_ML
+
+**Deep Learning classificator**
+
 ### 4- Aplicación
 
 Opción A:

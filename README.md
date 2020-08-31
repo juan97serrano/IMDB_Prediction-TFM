@@ -20,7 +20,7 @@ https://drive.google.com/drive/folders/1eqbmKMAjCjl1AWGqrRhgdbuQZzzm8pSU?usp=sha
 
 Las técnicas de preprocesamiento implementadas se encuentran explicadas en el Punto 2 en el informe del TFM. Todas las técnicas realizadas se encuentran en  los ficheros de la carpeta llamada "Preprocesamiento". Ahí encontraremos una seríe de ficheros numerados del 0-7 que indican el orden en el que se han ido realizado los cambios en el dataset original hasta obtener el fichero final llamado "imdb_data.csv".
 
-FICHEROS:
+FICHEROS (en la carpeta Preprocesamiento):
 
 0-Data_concat.ipynb: Unimos todos los ficheros resultantes del Scraper.
 
@@ -47,9 +47,9 @@ https://drive.google.com/drive/folders/1eqbmKMAjCjl1AWGqrRhgdbuQZzzm8pSU?usp=sha
 **Tabular classificator**
 
 ##### Baselines
-Los codigos que se han utilizado de Machine Learning para la realización de los **baselines** se encuentran en la carpeta Tabular_Classification/Pruebas_ML.
-##### EE
-EL codigo que se ha utlizado para hacer la clasificacion es: PONERLO
+Los codigos que se han utilizado de Machine Learning para la realización de los **baselines** se encuentran en la carpeta Tabular classification/Pruebas ML.
+##### Entity Embeddings
+EL codigo que se ha utlizado para hacer la clasificacion es: Tabular classification/Tabular_classification.ipynb
 
 **Image+Tab classificator**
 

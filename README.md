@@ -53,7 +53,7 @@ EL codigo que se ha utlizado para hacer la clasificacion es: PONERLO
 
 **Image+Tab classificator**
 
-EL codigo que se ha utlizado para hacer la clasificacion es: PONERLO
+EL codigo que se ha utlizado para hacer la clasificacion es: ClasificadorMultiInput/Clasificador_Multi_Input.ipynb
 
 **Image classificator**
 

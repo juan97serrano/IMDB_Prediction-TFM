@@ -102,7 +102,7 @@ docker_buildContainer.sh
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Tabular Classificator | 65  | 62 | 73  | 63  | 66  |
 | IMG Classificator | 27  | 56  | 48  | 45  | 44  |
-| IMG+Tab Classificator | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  | Contenido de la celda  |
+| IMG+Tab Classificator | 57  | 60  | 68  | 61  | 62  |
 | Description Classificator | 50  | 55  | 63  | 45  | 56  |
 | Title Classificator | 31  | 49  | 45  | 42  | 42  |
 

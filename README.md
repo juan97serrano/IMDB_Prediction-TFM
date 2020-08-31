@@ -44,28 +44,28 @@ https://drive.google.com/drive/folders/1eqbmKMAjCjl1AWGqrRhgdbuQZzzm8pSU?usp=sha
 
 ### 3- Clasificadores
 
-**Tabular classifcator**
+**Tabular classificator**
 
 ##### Baselines
 Los codigos que se han utilizado de Machine Learning para la realización de los **baselines** se encuentran en la carpeta Tabular_Classification/Pruebas_ML.
 ##### EE
 EL codigo que se ha utlizado para hacer la clasificacion es: PONERLO
 
-**Image+Tab classifcator**
+**Image+Tab classificator**
 
 EL codigo que se ha utlizado para hacer la clasificacion es: PONERLO
 
-**Image classifcator**
+**Image classificator**
 
 EL codigo que se ha utlizado para hacer la clasificacion es: PONERLO
 
-**Title classifcator**
+**Title classificator**
 
-EL codigo que se ha utlizado para hacer la clasificacion es: Title_classification_from_scratch.ipynb
+EL codigo que se ha utlizado para hacer la clasificacion es: Text/Text Classification/Title_classification_from_scratch.ipynb
 
-**Description classifcator**
+**Description classificator**
 
-EL codigo que se ha utlizado para hacer la clasificacion es: Description_classification_with_tensorflowhub.ipynb
+EL codigo que se ha utlizado para hacer la clasificacion es: Text/Text Classification/Description_classification_with_tensorflowhub.ipynb
 
 
 ### 4- Aplicación

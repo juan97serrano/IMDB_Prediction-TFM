@@ -1,6 +1,6 @@
 Flask==1.1.2
 numpy==1.16.6
-tensorflow==2.2.0
+tensorflow==2.2.1
 Pillow==7.0.0
 pandas==1.0.5
 git+https://github.com/LIAAD/yake
